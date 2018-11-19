@@ -61,20 +61,15 @@ function($scope, $state, $stateParams, empServices, $mdDialog){
           scope: $scope,
           preserveScope: true,
           parent: angular.element(document.body),
-        //   targetEvent: ev,
           clickOutsideToClose:true,
           locals: {
             editTask: value,
             taskDetails: task
           },
-        //   onComplete: closedialog,
           fullscreen: $scope.customFullscreen // Only for -xs, -sm breakpoints.
         })
         .then(function(answer) {
-            // console.log('closed');
-        //   $scope.status = 'You said the information was "' + answer + '".';
         }, function() {
-        //   $scope.status = 'You cancelled the dialog.';
         });
       };
 
@@ -85,20 +80,15 @@ function($scope, $state, $stateParams, empServices, $mdDialog){
           scope: $scope,
           preserveScope: true,
           parent: angular.element(document.body),
-        //   targetEvent: ev,
           clickOutsideToClose:true,
           locals: {
             editTask: value,
             taskDetails: task
           },
-        //   onComplete: closedialog,
           fullscreen: $scope.customFullscreen // Only for -xs, -sm breakpoints.
         })
         .then(function(answer) {
-            // console.log('closed');
-        //   $scope.status = 'You said the information was "' + answer + '".';
         }, function() {
-        //   $scope.status = 'You cancelled the dialog.';
         });
       };
 
@@ -109,20 +99,15 @@ function($scope, $state, $stateParams, empServices, $mdDialog){
               scope: $scope,
               preserveScope: true,
               parent: angular.element(document.body),
-            //   targetEvent: ev,
               clickOutsideToClose:true,
               locals: {
                 editTeam: value,
                 teamDetails: team
               },
-            //   onComplete: closedialog,
               fullscreen: $scope.customFullscreen // Only for -xs, -sm breakpoints.
             })
             .then(function(answer) {
-                // console.log('closed');
-            //   $scope.status = 'You said the information was "' + answer + '".';
             }, function() {
-            //   $scope.status = 'You cancelled the dialog.';
             });
       }
 
@@ -133,13 +118,10 @@ function($scope, $state, $stateParams, empServices, $mdDialog){
         var confirm = $mdDialog.confirm()
           .title('Delete Team')
           .textContent('Are you sure want to delete team?')
-        //   .ariaLabel('Lucky day')
-        //   .targetEvent(ev)
           .ok('OK')
           .cancel('Cancel');
 
     $mdDialog.show(confirm).then(function() {
-    //   $scope.status = 'You decided to get rid of your debt.';
         empServices.deleteTeam(team).then(
             function(result){
                 $scope.getMyTeams($scope.getTeam);
@@ -148,7 +130,6 @@ function($scope, $state, $stateParams, empServices, $mdDialog){
         )
     }, function() {
         $mdDialog.hide();
-    //   $scope.status = 'You decided to keep your debt.';
     });
         
     }
