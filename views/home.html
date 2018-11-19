@@ -1,4 +1,3 @@
-<!-- <p>{{name}}</p> -->
 
 <div class="container-fluid">
     <div class="col-12">
@@ -8,7 +7,6 @@
             </a>
             <ul class="navbar-nav d-flex justify-content-end flex-row">
                 <li class="nav-item mr-2" ng-click="logout()">Logout</li>
-                <!-- <li class="nav-item mr-2">Team</li> -->
             </ul>
         </nav>
 
@@ -18,43 +16,21 @@
               <md-tabs md-dynamic-height md-border-bottom md-selected="selectedIndex">
                 <md-tab label="Tasks" md-on-select="onTabSelected('tasks')">
                   <md-content class="md-padding">
-                    <!-- <h1 class="md-display-2">Tab One</h1> -->
                     <task-page></task-page>
                   </md-content>
                 </md-tab>
                 <md-tab label="Team" md-on-select="onTabSelected('team')">
                   <md-content class="md-padding" >
-                    <!-- <h1 class="md-display-2">Tab Two</h1> -->
                     <team-page></team-page>
                   </md-content>
                 </md-tab>
                 <md-tab label="Manage" md-on-select="onTabSelected('manage')">
                   <md-content class="md-padding">
-                    <!-- <h1 class="md-display-2">Tab Three</h1> -->
                     <manage-page></manage-page>
                   </md-content>
                 </md-tab>
               </md-tabs>
             </md-content>
-          </div>
-
-
-          <hr>
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-            </li>
-          </ul>
-          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">home</div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">profile</div>
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">contact</div>
           </div>
     </div>
 </div>
