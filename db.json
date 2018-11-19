@@ -1,0 +1,119 @@
+{
+  "employee": [
+    {
+      "id": 1,
+      "name": "Pramod",
+      "email": "pramod@gmail.com",
+      "password": "3db6c6dc0ac090a14e42fd6cba6456fc5a0e957f4c7976b518cdd7296cf21df3",
+      "city": "Hyderabad"
+    },
+    {
+      "id": 2,
+      "name": "Kumar",
+      "email": "kumar@gmail.com",
+      "password": "3db6c6dc0ac090a14e42fd6cba6456fc5a0e957f4c7976b518cdd7296cf21df3",
+      "city": "Hyd"
+    },
+    {
+      "email": "pramod006m@gmail.com",
+      "name": "Pramod",
+      "password": "60d203f36c2f7d24077b2cd58e03d265df10d5c410d079ee4d1da4ffef8a1230",
+      "id": 3
+    },
+    {
+      "email": "mpramod006m@gmail.com",
+      "password": "3db6c6dc0ac090a14e42fd6cba6456fc5a0e957f4c7976b518cdd7296cf21df3",
+      "name": "mpramod006m",
+      "id": 4
+    }
+  ],
+  "taskList": [
+    {
+      "taskname": "Task 01",
+      "duedate": "12/17/2018",
+      "percentage": "75.5",
+      "finished": "Finished",
+      "userid": 2,
+      "id": 1,
+      "status": "0"
+    },
+    {
+      "taskname": "Task 02",
+      "duedate": "12/17/2018",
+      "percentage": "55.5",
+      "finished": "Active",
+      "userid": 2,
+      "id": 2
+    },
+    {
+      "taskname": "Task 03",
+      "duedate": "fdsa",
+      "percentage": "00.0",
+      "finished": "Active",
+      "userid": 1,
+      "id": 3
+    },
+    {
+      "name": "Task 04",
+      "duedate": "12/17/2018",
+      "percentage": "65.5",
+      "finished": "Active",
+      "userid": 2,
+      "id": 4
+    },
+    {
+      "taskname": "Task 05",
+      "duedate": "fsdf",
+      "finished": "Active",
+      "percentage": "00.0",
+      "userid": 1,
+      "id": 5
+    },
+    {
+      "taskname": "Task 6",
+      "duedate": "12/12/2019",
+      "finished": "active",
+      "percentage": "00.0",
+      "userid": 1,
+      "id": 6
+    }
+  ],
+  "myteams": [
+    {
+      "id": 2,
+      "title": "Team 02",
+      "description": "lorem ipsum",
+      "owner": "Kumar",
+      "role": "Admin",
+      "members": "Pramod,Kumar"
+    },
+    {
+      "id": 3,
+      "title": "Team 03",
+      "description": "lorem ipsum",
+      "owner": "Pramod",
+      "role": "Admin",
+      "members": "Pramod,Kumar"
+    },
+    {
+      "title": "fasdf",
+      "description": "fasdfasd",
+      "members": "asdf,rqew",
+      "id": 4
+    },
+    {
+      "title": "fasd",
+      "description": "ads",
+      "members": "fads",
+      "id": 5
+    }
+  ],
+  "asamember": [
+    {
+      "id": 1,
+      "title": "Other Team 01",
+      "description": "lorem ipsum",
+      "role": "Member"
+    }
+  ]
+}
