@@ -1,0 +1,25 @@
+<!-- <p>Sign in / Register</p> -->
+<br>
+<div class="container">
+    <div class="col-12 d-flex justify-content-center">
+        <div class="col-5 card">
+            <h3>Login/Sign Up</h3>
+            <p class="text-danger">{{message}}</p>
+            <form >
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="email" ng-model="user.email" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" name="password" ng-model="user.password" id="password"
+                        placeholder="Enter password">
+                </div>
+                <div class="form-group">
+                    <input type="button" class="form-control btn btn-primary" ng-click="submitLogin()" id="submit"
+                        value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

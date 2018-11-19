@@ -1,0 +1,30 @@
+<!-- <p>Team Page</p> -->
+<div class="form-group float-left">
+    <label for="my team">Team Type</label>
+    <select class="form-control" ng-model="team" ng-change="getMyTeams(team)">
+        <option value="myteams">My Teams</option>
+        <option value="asamember">As a Member</option>
+    </select>
+</div>
+<button class="btn btn-primary float-right" ng-click="createTeam()">Create Team</button>
+
+<div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Team Name</th>
+                <th>Team Description</th>
+                <th> </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="cursor: pointer;" ng-repeat="team in teams" ng-click="showMembers(team)">
+                <td>{{team.id}}</td>
+                <td>{{team.title}}</td>
+                <td>{{team.description}}</td>
+                <td><button class="btn btn-danger" ng-click="deleteTeam($event, team)">Delete this Team</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,63 @@
+<!-- <div class="col-12">
+    
+</div> -->
+
+
+<md-dialog aria-label="Create Task" class="col-7 pl-0 pr-0">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Create Task</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    <!-- <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon> -->
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+            <div class="col-12">
+                <form ng-cloak>
+                    <div class="form-group" ng-if="editTask">
+                        <label for="name">Task ID</label>
+                        <input type="text" class="form-control" ng-model="task.id" placeholder="Task ID" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Task Name</label>
+                        <input type="text" class="form-control" ng-model="task.taskname" placeholder="Task Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="duedate">Due Date</label>
+                        <input type="text" class="form-control" ng-model="task.duedate" placeholder="Due Date">
+                    </div>
+                    <div class="form-group" ng-if="editTask">
+                        <label for="percentage">% Done</label>
+                        <input type="text" class="form-control" ng-model="task.percentage" placeholder="Percentage">
+                    </div>
+                    <div class="form-group" ng-if="editTask">
+                        <label for="userid">User ID</label>
+                        <input type="text" class="form-control" ng-model="task.userid" placeholder="Userid">
+                    </div>
+                    <div class="form-group" ng-if="editTask">
+                        <label for="status">Status</label>
+                        <!-- <input type="text" class="form-control" ng-model="task.status" placeholder="Status"> -->
+                        <select ng-model="task.finished" class="form-control">
+                            <option value='Active'>Active</option>
+                            <option value='Finished'>Finished</option>
+                        </select>
+                    </div>
+
+                </form>
+            </div>
+
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+            <div class="form-group text-right">
+                <button class="btn btn-danger mr-2" ng-click="cancelTask()">Cancel</button>
+                <button class="btn btn-primary" ng-if="!editTask" ng-click="createTask()">Create</button>
+                <button class="btn btn-primary" ng-if="editTask" ng-click="saveTask()">Save</button>
+            </div>
+        </md-dialog-actions>
+    </form>
+</md-dialog>
