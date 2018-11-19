@@ -23,7 +23,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         controller:'authController',
         templateUrl:'views/auth.html'
     });
-    $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/home/tasks');
     
 
     function checkLogin($state){
